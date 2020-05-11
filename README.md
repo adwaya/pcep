@@ -1,10 +1,12 @@
 # pcep
+
 entry level python programmer
 
-# Installing Python3.7 on CentOS 7:
+# Installing Python3.7 on CentOS 7
 
-## Here are the commands that we'll run to build and install Python 3.7 on CentOS 7:
-switch to root 
+## Here are the commands that we'll run to build and install Python 3.7 on CentOS 7
+
+```
 $ sudo -i
 $ yum groupinstall -y "Development Tools"
 $ yum install -y zlib-devel openssl-devel
@@ -46,11 +48,20 @@ $ ./configure --enable-optimizations --with-ensurepip=install
 
 $ make altinstall
 $ exit
+```
+
 Note: make altinstall causes it to not replace the built-in python executable.
 
 Ensure Python 3 Works with Sudo
-Make sure that secure_path in /etc/sudoers file includes /usr/local/bin. The line should look something like this:
+
+Make sure that secure_path in /etc/sudoers file includes /usr/local/bin.
+The line should look something like this:
 Defaults secure_path = /sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin
 Upgrade Pip (might not be necessary)
-The version of pip that we have might be up-to-date, but it's a good practice to try to update it after the installation. We need to use the pip3.7 executable because we're working with Python 3, and we use sudo so that we can write files under the /usr/local directory.
-$ sudo pip3.7 install --upgrade pip
+The version of pip that we have might be up-to-date, but it's a good practice to try to update it after the installation.
+We need to use the pip3.7 executable because we're working with Python 3, and we use sudo so that we can write files under the /usr/local directory.
+`$ sudo pip3.7 install --upgrade pip`
+
+
+Lexical Analysis
+ - This is a process of breaking up source code into identified tokens. Like converting a line of code from Celsius to Fahrenheit
